@@ -1,0 +1,13 @@
+body {
+    /*padding-top: 70px;*/
+}
+
+
+.required-input{
+    color: #f53535;
+}
+
+div.checkbox{
+	font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lis",
+				"list_kpi"
+			],
+			[
+				"read",
+				"read_settings"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"li",
+				"list_kpi"
+			],
+			[
+				"kpi",
+				"kpi_percentage"
+			],
+			[
+				"val",
+				"val_actual_percentage"
+			],
+			[
+				"selec",
+				"selectedMonth"
+			],
+			[
+				"mon",
+				"month_name"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"va",
+				"val_target"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"kpi_",
+				"kpi_id"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"ur",
+				"url_indikator"
+			],
+			[
+				"b",
+				"bobot"
+			],
+			[
+				"val_",
+				"val_actual_percentage"
+			],
+			[
+				"ac",
+				"val_actual"
+			],
+			[
+				"val_ac",
+				"val_actual_percentage"
+			],
+			[
+				"Ta",
+				"TargetTW1"
+			],
+			[
+				"list",
+				"list_measureunit"
+			],
+			[
+				"info",
+				"infopokok"
+			],
+			[
+				"sa",
+				"save"
+			],
+			[
+				"I",
+				"Input"
+			],
+			[
+				"valida",
+				"Validator"
+			],
+			[
+				"list_paren",
+				"list_parent_kpi"
+			],
+			[
+				"is",
+				"is_target_valid"
+			],
+			[
+				"Mot",
+				"month"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"Created",
+				"CreatedBy"
+			],
+			[
+				"kpiva",
+				"KPIValue	KPIValue"
+			],
+			[
+				"inp",
+				"Input"
+			],
+			[
+				"KPI",
+				"KPIBobot	KPIBobot"
+			],
+			[
+				"Updated",
+				"UpdatedBy"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"route",
+				"Route"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"last_filter": "xdebug:",
+		"selected_items":
+		[
+			[
+				"xdebug:",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"xdebug:eva",
+				"Xdebug: Session - Evaluate"
+			],
+			[
+				"xdebuh",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"xde",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"xdebug",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"eval",
+				"Xdebug: Session - Evaluate"
+			],
+			[
+				"x",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"xdeb",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"xdebu",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"xdebug:eval",
+				"Xdebug: Session - Evaluate"
+			],
+			[
+				"evalu",
+				"Xdebug: Session - Evaluate"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"browse packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Package Control: Add Channel"
+			],
+			[
+				"package c",
+				"Package Control: Add Channel"
+			],
+			[
+				"",
+				"AngularJS: Toggle - Disable Built-in Element Completions"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read());",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Apache/htdocs/marine_forum"
+	],
+	"file_history":
+	[
+		"/E/Apache/htdocs/opencart/system/config/index.html",
+		"/E/Apache/htdocs/TestLaravel/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php",
+		"/E/Apache/htdocs/TestLaravel/app/database/seeds/DatabaseSeeder.php",
+		"/E/Apache/htdocs/TestLaravel/app/config/app.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"is_readable",
+			"year",
+			"get_informa",
+			"infopokok",
+			"title",
+			"date",
+			"infopokok",
+			"',\n",
+			"year",
+			"infopokok",
+			"span",
+			";\n",
+			"year",
+			"month",
+			"kpiin",
+			"filterdate",
+			"list_kpi",
+			"list_value",
+			"active",
+			"$key",
+			"form",
+			"list_kpi",
+			"list_value",
+			"where",
+			"null",
+			"');\n",
+			"');",
+			"progress",
+			"'';\n",
+			"calculate_polarization_percentage",
+			"form",
+			"');\n",
+			"config",
+			"index",
+			"min:",
+			";\n",
+			"min:",
+			"min",
+			"5",
+			"min",
+			"min3",
+			"login",
+			"',\n",
+			"confirm",
+			"',\n",
+			"            '",
+			"asset",
+			"annual",
+			"measure",
+			"kpi",
+			"$",
+			"\n		",
+			"k_child",
+			"    <div class=\"form-group\">\n        {!! Form::label('realname', 'Real Name', array('class' => 'col-sm-3')) !!}\n        <div class=\"col-sm-6\">\n            {!! Form::text('realname', '', array('id' => 'RealName', 'class' => 'form-control')) !!}\n        </div>\n    </div>",
+			"list",
+			"userController",
+			"kpi/",
+			"KPI",
+			"kpi/",
+			"kpi",
+			"KPIController",
+			"kpi/",
+			"edit",
+			"$data",
+			"$data[0]",
+			"datepicker",
+			"dateoicker",
+			"class",
+			"item",
+			"k_parent",
+			"$k->",
+			"getlist",
+			"year",
+			"if",
+			";\n",
+			"$kpi",
+			"col-sm-10",
+			"col-sm-2",
+			"select",
+			"form",
+			"/>\n",
+			"mu",
+			"\n        ",
+			"\n            ",
+			"list_meas",
+			"col-sm-2",
+			"is active",
+			"[",
+			"measureunit",
+			"}}\">\n",
+			"InfoPokok",
+			"KPI::",
+			"KPI",
+			"col-sm-3",
+			"MeasureUnit::all()",
+			"list_measureunit",
+			"measureunit",
+			"',",
+			"');\n",
+			"Route",
+			"bobot",
+			"measureUnit",
+			"<div class=\"col-sm-10\">",
+			"kpibobot",
+			"kpivalue",
+			"KPIValue",
+			"order",
+			"where",
+			"edit(",
+			"with",
+			"o",
+			"actual",
+			"dashboard_icon",
+			"array",
+			"kpi",
+			"$kpi",
+			"$list_kpi",
+			"KPI::",
+			"ui element",
+			"uielement",
+			"date",
+			"bar",
+			"chat",
+			"panel-default",
+			"chat",
+			"year",
+			"$value",
+			"KPIValueController"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"list_kpi_value",
+			"k",
+			"UserController",
+			"user/",
+			"User",
+			"user/",
+			"UserController",
+			"user/",
+			"$kpi_value",
+			"$item",
+			"k_child",
+			"$k_parent->",
+			"col-sm-6",
+			"col-sm-3",
+			"InfoPokok::",
+			"MeasureUnit::lists('Unit', 'Id')",
+			"mu",
+			"<div class=\"col-sm-6\">",
+			"infopokok",
+			"InfoPokok",
+			"user",
+			"$user",
+			"$list_user",
+			"User::",
+			"$kpi_value",
+			"KPIController",
+			"KPIValue",
+			"KPIValue::",
+			"KPIValueController",
+			"'/kpibobot/view'",
+			"to(",
+			"Redirect::route('/kpibobot/index/'",
+			"kpibobot.",
+			"kpibobot/",
+			"/kpibobot",
+			"KPIBobot::",
+			"kpi_bobot.",
+			"!!}",
+			"{!!",
+			"delete",
+			"add",
+			"delete",
+			"delete2",
+			"delete",
+			"add",
+			"edit",
+			"edit2",
+			"$add",
+			"$data",
+			"kpi",
+			"KPIBobot"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 94.0
+	},
+	"pinned_build_system": "",
+	"project": "marine_forum.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				".env",
+				".env"
+			],
+			[
+				"confi",
+				"app\\Http\\Controllers\\ConfigController.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				"dashboa",
+				"app\\Http\\Controllers\\DashboardController.php"
+			],
+			[
+				"kpiva",
+				"app\\Http\\Controllers\\KPIValueController.php"
+			],
+			[
+				"infopo",
+				"app\\Http\\Controllers\\InfoPokokController.php"
+			],
+			[
+				"kpival",
+				"app\\Http\\Controllers\\KPIValueController.php"
+			],
+			[
+				"auth",
+				"app\\Http\\Controllers\\Auth\\AuthController.php"
+			],
+			[
+				"database",
+				"config\\database.php"
+			],
+			[
+				"kpi",
+				"app\\Http\\Controllers\\KPIController.php"
+			],
+			[
+				"fabfe",
+				"storage\\framework\\views\\fabfe24388b1078b983603d6f88ea075"
+			],
+			[
+				"user",
+				"app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"base",
+				"app\\Http\\Controllers\\BaseController.php"
+			],
+			[
+				"basecontroll",
+				"app\\Http\\Controllers\\BaseController.php"
+			],
+			[
+				"hash",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Hash.php"
+			],
+			[
+				"usercon",
+				"app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"dash",
+				"app\\Http\\Controllers\\DashboardController.php"
+			],
+			[
+				"f3",
+				"storage\\framework\\views\\33ab8374cdde34992d1e737d75d6aed8"
+			],
+			[
+				"f480",
+				"storage\\framework\\views\\f48067cb20c9bb2303a61d97c9f4b294"
+			],
+			[
+				"33ab",
+				"storage\\framework\\views\\33ab8374cdde34992d1e737d75d6aed8"
+			],
+			[
+				"5c",
+				"storage\\framework\\views\\5c22d9e80b94ab1a97aee55105c32cc2"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"5c22",
+				"storage\\framework\\views\\5c22d9e80b94ab1a97aee55105c32cc2"
+			],
+			[
+				"6e6",
+				"storage\\framework\\views\\6e68b9dcbdf454c4148e87cb9749afc5"
+			],
+			[
+				"6e68",
+				"storage\\framework\\views\\6e68b9dcbdf454c4148e87cb9749afc5"
+			],
+			[
+				"6e",
+				"storage\\framework\\views\\6e68b9dcbdf454c4148e87cb9749afc5"
+			],
+			[
+				"670",
+				"storage\\framework\\views\\670c1bcfa9aeab007b09c38e8adc8508"
+			],
+			[
+				"kpicon",
+				"app\\Http\\Controllers\\KPIController.php"
+			],
+			[
+				"kpibobo",
+				"app\\Http\\Controllers\\KPIBobotController.php"
+			],
+			[
+				"infopokok",
+				"app\\Model\\InfoPokok.php"
+			],
+			[
+				"kpico",
+				"app\\Http\\Controllers\\KPIController.php"
+			],
+			[
+				"33ea",
+				"storage\\framework\\views\\33ea6acfcd3269036ccc4715c5adf6a3"
+			],
+			[
+				"d27",
+				"storage\\framework\\views\\d27dca39039311df9a6f0cf31e68ea4f"
+			],
+			[
+				"2aeb",
+				"storage\\framework\\views\\62c34ae27da560c7ab7bc903b0382aeb"
+			],
+			[
+				"6d",
+				"storage\\framework\\views\\b5b859c323ee2b4ed4f8b0e15216cc6d"
+			],
+			[
+				"5",
+				"storage\\framework\\views\\5c22d9e80b94ab1a97aee55105c32cc2"
+			],
+			[
+				"db",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\DB.php"
+			],
+			[
+				"model",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			],
+			[
+				"93d",
+				"storage\\framework\\views\\9fbc3aa120d2798d2215d64bcc0df93d"
+			],
+			[
+				"f93d",
+				"storage\\framework\\views\\9fbc3aa120d2798d2215d64bcc0df93d"
+			],
+			[
+				"info",
+				"app\\Model\\InfoPokok.php"
+			],
+			[
+				"validator",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php"
+			],
+			[
+				"ea4f",
+				"storage\\framework\\views\\d27dca39039311df9a6f0cf31e68ea4f"
+			],
+			[
+				"view.blade",
+				"resources\\views\\kpivalue\\view.blade.php"
+			],
+			[
+				"kpivalue",
+				"app\\Http\\Controllers\\KPIValueController.php"
+			],
+			[
+				"timeline.css",
+				"public\\css\\plugins\\timeline\\timeline.css"
+			],
+			[
+				"view",
+				"resources\\views\\kpivalue\\view.blade.php"
+			],
+			[
+				"dashboard",
+				"public\\js\\demo\\dashboard-demo.js"
+			],
+			[
+				"dashboard-demo",
+				"public\\js\\demo\\dashboard-demo.js"
+			],
+			[
+				"dashb",
+				"resources\\views\\dashboard.blade.php"
+			],
+			[
+				"rou",
+				"app\\Http\\routes.php"
+			],
+			[
+				"metismenu",
+				"public\\js\\plugins\\metisMenu\\jquery.metisMenu.js"
+			],
+			[
+				"sb-admi",
+				"public\\js\\sb-admin.js"
+			],
+			[
+				"kpic",
+				"app\\Http\\Controllers\\KPIController.php"
+			],
+			[
+				"edit",
+				"resources\\views\\kpi\\edit.blade.php"
+			],
+			[
+				"add",
+				"resources\\views\\kpi\\add.blade.php"
+			],
+			[
+				"rout",
+				"app\\Http\\routes.php"
+			],
+			[
+				"15d",
+				"storage\\framework\\views\\15dcea59d7c716548e90aac262d359e8"
+			],
+			[
+				"15dc",
+				"storage\\framework\\views\\15dcea59d7c716548e90aac262d359e8"
+			],
+			[
+				"0b",
+				"storage\\framework\\views\\0b7520a0fdd0b34036c943f5c25fde36"
+			],
+			[
+				"messageba",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\MessageBag.php"
+			],
+			[
+				"message",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\MessageBag.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"log.php",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Log.php"
+			],
+			[
+				"33e",
+				"storage\\framework\\views\\33ea6acfcd3269036ccc4715c5adf6a3"
+			],
+			[
+				"compose",
+				"composer.json"
+			],
+			[
+				"app.",
+				"config\\app.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"eloquent",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php"
+			],
+			[
+				"autoload",
+				"bootstrap\\autoload.php"
+			],
+			[
+				"",
+				"Package Control Messages"
+			],
+			[
+				"compser",
+				"composer.json"
+			],
+			[
+				"morris",
+				"morris.html"
+			],
+			[
+				"controller",
+				"system\\engine\\controller.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"18":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

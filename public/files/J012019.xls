@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>jadwal bulan ini</title>
+	<!-- <link rel="stylesheet" type="text/css" href="dist/css/detiltabel.css"> -->
+	<style type="text/css">
+	.tab-ok {
+		font-size: 10px;
+		font-family: 'Tahoma', 'Verdana', 'Trebuchet MS';
+		/*border-collapse: collapse;*/
+		border-color: black;
+		text-align: center;
+		/*padding: 1px;*/
+
+	}
+	.red {
+		background-color: red;
+	}
+	/*table, td {
+		padding: 3.5px;
+		}*/
+		</style>
+	</head>
+	<body>
+		<table class="tab-ok">
+			<tr>
+				<!-- <td width="200px" colspan="4"><img src="dist/img/logo-kcj.png" width="100px"></td> -->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="28"><h2>JADWAL DINASAN PETUGAS PAM STASIUN SUDIMARA</h2></td>
+			</tr>
+		</table>
+
+		<table border="1"  class="tab-ok">
+			<tr>
+				<th rowspan="2">No.</th>
+				<th rowspan="2">NAMA</th>
+				<th rowspan="2">JABATAN	</th>
+				<th rowspan="2">NIK</th>
+				<th colspan='31'>Bulan JANUARI 2019</th><th rowspan='2'>HADIR</th></tr><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th><th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th><th>31</th>				
+			</tr>	
+			<tr><td>1</td><td>DENIANSYAH</td><td>DANRU</td><td>11-11-5-0065</td><td >S</td><td >P</td><td >S</td><td >P</td><td >S</td><td class='red'>L</td><td class='red'>L</td><td >S</td><td >P</td><td >S</td><td >P</td><td >S</td><td class='red'>L</td><td class='red'>L</td><td >S</td><td >P</td><td >S</td><td >P</td><td >S</td><td class='red'>L</td><td class='red'>L</td><td >S</td><td >P</td><td >S</td><td >P</td><td >S</td><td class='red'>L</td><td class='red'>L</td><td >S</td><td >P</td><td >S</td><td>23</td></tr><tr><td>2</td><td>NAWAWI</td><td>ANGGOTA</td><td>11-11-5-0112</td><td >P1</td><td >S1</td><td >SP</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >PP</td><td >PP</td><td >S2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >P1</td><td >PC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P2</td><td >S2</td><td >P2</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P1</td><td >SC</td><td >PC</td><td>23</td></tr><tr><td>3</td><td>JAJA AJOS</td><td>ANGGOTA</td><td>11-11-5-0200</td><td >SP</td><td >P1</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >M2</td><td >SP</td><td >P1</td><td >PC</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >M2</td><td >S1</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td >SC</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >SC</td><td >SP</td><td >PP</td><td >M2</td><td>23</td></tr><tr><td>4</td><td>LILIK KUSDINAR</td><td>ANGGOTA</td><td>11-11-5-0136</td><td >PP</td><td >S2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td >S2</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P1</td><td >M2</td><td >S1</td><td >PC</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PC</td><td >S1</td><td >S2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PC</td><td >SP</td><td >P1</td><td >M2</td><td class='red'>L</td><td>22</td></tr><tr><td>5</td><td>SUMITRA</td><td>ANGGOTA</td><td>11-11-5-0076</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P2</td><td >PP</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >S1</td><td >SC</td><td >PP</td><td >P1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >SP</td><td >SP</td><td >P1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PC</td><td >SP</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td>21</td></tr><tr><td>6</td><td>M. IMAM YAHYA</td><td>ANGGOTA</td><td>11-11-5-0055</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PC</td><td >S1</td><td >PC</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >P1</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >S1</td><td >S2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P2</td><td >S1</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td>21</td></tr><tr><td>7</td><td>IRFAN NAWAWI</td><td>ANGGOTA</td><td>11-11-5-0116</td><td class='red'>L</td><td >S1</td><td >PP</td><td >S1</td><td >P1</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >S1</td><td >SP</td><td >S2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >P2</td><td >PC</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >S1</td><td >SC</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td>22</td></tr><tr><td>8</td><td>HARIS FADILAH</td><td>ANGGOTA</td><td>11-11-5-0113</td><td >S1</td><td >PP</td><td >S2</td><td >PP</td><td >PC</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >S2</td><td >SP</td><td >PP</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >S2</td><td >S1</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >S2</td><td >S2</td><td >SP</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P1</td><td >S1</td><td>23</td></tr><tr><td>9</td><td>DICKY IRAWAN S.</td><td>ANGGOTA</td><td>11-11-5-0064</td><td >PC</td><td >P2</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >SP</td><td >PC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PC</td><td >S1</td><td >P1</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td >S1</td><td >SC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >S2</td><td >M2</td><td>23</td></tr><tr><td>10</td><td>ARIS MUNANDAR</td><td>ANGGOTA</td><td>11-11-5-0063</td><td >S2</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PP</td><td >S2</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >SC</td><td >PP</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P2</td><td >SP</td><td >PP</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PC</td><td >S1</td><td >P2</td><td >M2</td><td>23</td></tr><tr><td>11</td><td>AANG UTON ANSHORI</td><td>ANGGOTA</td><td>11-11-5-0081</td><td >PC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PP</td><td >SP</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >SC</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td >S2</td><td >S1</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PP</td><td >SC</td><td >P2</td><td >SC</td><td class='red'>L</td><td>22</td></tr><tr><td>12</td><td>ATA SAPTAJI</td><td>ANGGOTA</td><td>11-11-5-0066</td><td >S2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P2</td><td >P1</td><td >P1</td><td >S1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PP</td><td >PP</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P1</td><td >S2</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >M2</td><td >SP</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td>21</td></tr><tr><td>13</td><td>BILAL SUKO SUSILO</td><td>ANGGOTA</td><td>11-11-5-0118</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >S2</td><td >PP</td><td >S1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P1</td><td >PC</td><td >PC</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >S1</td><td >SP</td><td >S2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >P1</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td>21</td></tr><tr><td>14</td><td>ASEP JAENAL</td><td>ANGGOTA</td><td>11-11-5-0236</td><td class='red'>L</td><td >S2</td><td >P2</td><td >SP</td><td >PP</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P1</td><td >SC</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >SC</td><td >P1</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >S2</td><td >SP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P2</td><td>22</td></tr><tr><td>15</td><td>ATANG</td><td>ANGGOTA</td><td>11-11-5-0104</td><td >SP</td><td >P2</td><td >SC</td><td >PP</td><td >SP</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >S2</td><td >PC</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >SC</td><td >PC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >P1</td><td >PC</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >SC</td><td >S2</td><td>23</td></tr><tr><td>16</td><td>MOCHAMAD LOMRI</td><td>ANGGOTA</td><td>11-11-5-0202</td><td >P1</td><td >SP</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PP</td><td >PC</td><td >P2</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >S2</td><td >SP</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PC</td><td >S2</td><td >SC</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PC</td><td >S1</td><td >P2</td><td>23</td></tr><tr><td>17</td><td>M. ARIF BUDIMAN</td><td>ANGGOTA</td><td>11-11-5-0144</td><td >SC</td><td >PP</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PC</td><td >S1</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PC</td><td >SC</td><td >P2</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >P2</td><td >PP</td><td >PC</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >PP</td><td >PC</td><td >M2</td><td>23</td></tr><tr><td>18</td><td>MUHAMAD LUFTI</td><td>ANGGOTA</td><td>11-11-5-0051</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PC</td><td >PP</td><td >P1</td><td >P1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PP</td><td >S1</td><td >P2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >SP</td><td >SP</td><td >PP</td><td >P1</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P1</td><td >S1</td><td >PP</td><td >M1</td><td class='red'>L</td><td>22</td></tr><tr><td>19</td><td>INDRA CAHYA</td><td>ANGGOTA</td><td>11-11-5-0270</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >M1</td><td >SC</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P2</td><td >SP</td><td >P1</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >P2</td><td >S1</td><td >S1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PP</td><td >S1</td><td >S2</td><td >S2</td><td class='red'>L</td><td class='red'>L</td><td>21</td></tr><tr><td>20</td><td>DANI HARDIANSYAH</td><td>ANGGOTA</td><td>11-11-5-0171</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >P2</td><td >S2</td><td >PC</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PC</td><td >SP</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >S1</td><td >SP</td><td >P2</td><td >PC</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >S1</td><td >SC</td><td >PP</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td>21</td></tr><tr><td>21</td><td>RIZKI HERIANTO</td><td>ANGGOTA</td><td>11-11-5-0273</td><td class='red'>L</td><td >SP</td><td >P1</td><td >SP</td><td >PP</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PC</td><td >S2</td><td >P1</td><td >S1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >S2</td><td >SC</td><td >S2</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PC</td><td >SP</td><td >S2</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >M1</td><td>22</td></tr><tr><td>22</td><td>HABIBI</td><td>ANGGOTA</td><td>11-11-5-0133</td><td >S1</td><td >PC</td><td >S1</td><td >P2</td><td >M2</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >PP</td><td >PP</td><td >M1</td><td >SC</td><td class='red'>L</td><td class='red'>L</td><td >SP</td><td >P1</td><td >SP</td><td >PP</td><td >P2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >S2</td><td >SC</td><td >P1</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >SC</td><td >PP</td><td >SP</td><td>23</td></tr><tr><td>23</td><td>AHMAD SUHEDI</td><td>ANGGOTA</td><td>11-11-5-0123</td><td >PC</td><td >SC</td><td >PC</td><td >M1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PC</td><td >SP</td><td >P2</td><td >PP</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >PP</td><td >PP</td><td >P1</td><td >S2</td><td class='red'>L</td><td class='red'>L</td><td >S1</td><td >PP</td><td >SP</td><td >S2</td><td >S1</td><td class='red'>L</td><td class='red'>L</td><td >S2</td><td >SP</td><td >S1</td><td >PP</td><td>23</td></tr></table>
+<table class='tab-ok'><tr><td></td>
+<td></td>
+<td></td>
+<td>PAGI</td><td>7</td><td>8</td><td>7</td><td>7</td><td>6</td><td>9</td><td>7</td><td>7</td><td>8</td><td>9</td><td>8</td><td>6</td><td>7</td><td>5</td><td>6</td><td>9</td><td>7</td><td>7</td><td>6</td><td>4</td><td>5</td><td>7</td><td>6</td><td>5</td><td>6</td><td>6</td><td>7</td><td>5</td><td>7</td><td>6</td><td>5</td></tr><tr><td></td>
+<td></td>
+<td></td>
+<td>SIANG</td><td>8</td><td>7</td><td>8</td><td>6</td><td>8</td><td>4</td><td>7</td><td>8</td><td>7</td><td>6</td><td>7</td><td>8</td><td>6</td><td>6</td><td>9</td><td>6</td><td>8</td><td>8</td><td>8</td><td>9</td><td>9</td><td>8</td><td>9</td><td>10</td><td>9</td><td>8</td><td>6</td><td>9</td><td>8</td><td>9</td><td>7</td></tr><tr><td></td>
+<td></td>
+<td></td>
+<td>MALAM</td><td>2</td><td>2</td><td>2</td><td>4</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>5</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>5</td></tr><tr><td></td>
+<td></td>
+<td></td>
+<td>LIBUR</td><td>6</td><td>6</td><td>6</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>6</td><td>6</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>6</td><td>6</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>6</td><td>6</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>6</td><td>6</td></tr>		</table><br>
+		<table  class="tab-ok">
+			<tr>
+				<td></td>
+				<td>
+					<table border="1"  class="tab-ok">
+						<tr><td colspan="3">KETERANGAN</td></tr>
+						<tr>
+							<td>P1 / S1 / M1</td>
+							<td colspan="2">GATE BAWAH</td>
+						</tr>
+						<tr>
+							<td>P2 / S2 / M2</td>
+							<td colspan="2">GATE ATAS</td>
+						</tr>
+						<tr>
+							<td>PC / SC</td>
+							<td colspan="2">CROSSINGAN</td>
+						</tr>
+						<tr>
+							<td>PP / SP</td>
+							<td colspan="2"><i>PERON (PATROLI)</i></td>
+						</tr>
+						<tr>
+							<td>L</td>
+							<td colspan="2">LIBUR</td>
+						</tr>
+
+					</table>
+				</td>
+
+				<td></td>
+
+				<td>
+					<table BORDER="1"  class="tab-ok">
+						<tr>
+							<td colspan="7">DIBUAT OLEH</td>
+							<td colspan="21">MENGETAHUI</td>
+						</tr>
+						<tr>
+							<td colspan="7" rowspan="4"></td>
+							<td colspan="7" rowspan="4"></td>
+							<td colspan="7" rowspan="4"></td>
+							<td colspan="7" rowspan="4"></td>
+						</tr>
+						<tr></tr>
+						<tr></tr>
+						<tr></tr>
+						<tr>
+							<td colspan="7">DANRU</td>
+							<td colspan="7">DANWIL</td>
+							<td colspan="7">SVP/STAFF STASIUN</td>
+							<td colspan="7">KEPALA STASIUN</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<!-- // <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
+		<!-- // <script src="plugins/jQueryUI/jquery-ui.min.js"></script> -->
+		<!-- // <script src="bootstrap/js/bootstrap.min.js"></script> -->
+	</body>
+	</html>
+	

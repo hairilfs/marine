@@ -1,0 +1,55 @@
+NIP
+Nama
+Tempat Lahir
+Tanggal Lahir
+Agama
+Jenis Kelamin
+Telepon 1
+Telepon 2
+Telepon 3
+Alamat 1
+Alamat 2
+Alamat 3
+Kota
+kode Pos
+Email 1
+Email 2
+Keterangan
+Status
+Jabatan Fungsional
+Level Jabatan Fungsional
+Jabatan Struktural
+Level Struktural
+Unit Kerja
+Pangkat &amp; Golongan
+
+Universitas
+Fakultas
+Jurusan
+Tingkat
+Tanggal Lulus
+Tahun Lulus
+
+
+university_name
+faculty_name
+major_name
+education_level
+graduate_date
+graduate_year
+, id_university,id_faculty, id_major, id_education_level 
+
+Tanggal Mulai
+Tanggal Selesai
+Tanggal Lulus
+Tahun Lulus
+No Sertifikasi
+Kartu MI
+Tanggal Pengukuhan
+Keterangan Pelatihan
+Refreshment
+Status Pelatihan
+Jenis Pelatihan
+
+date_taken_from, date_taken_to, graduate_date, graduate_year, 
+certificate_no, mi_card, mi_date, et.description as training_description, refreshment, et.status as training_status, training_type_name
