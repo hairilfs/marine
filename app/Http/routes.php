@@ -355,9 +355,12 @@ Route::get('messages/{id?}', array('uses' => 'MessagesController@show', 'as' => 
 Route::put('messages/{id?}', array('uses' => 'MessagesController@update', 'as' => 'messages.update'));
 Route::get('messages/delete/{id?}','MessagesController@delete');
 
-Route::get('notification','BaseController@list_notification');
-Route::get('notification/new','BaseController@new_notification');
+Route::get('notification','BaseController@list_notification')->name('notification_list');
+Route::get('notification/add','BaseController@add_notification')->name('notification_new');
 Route::post('notification/store','BaseController@insert_notification');
+Route::get('notification/edit/{id?}','BaseController@edit_notification')->name('edit_notification');
+Route::post('notification/edit','BaseController@store_edit_notification')->name('store_edit_notification');
+Route::post('notification/get/{id?}','BaseController@get_notif')->name('get_notif');
 Route::get('notification/update','BaseController@update_status_notification');
 Route::post('notification/update','BaseController@insert_notification');
 Route::get('notification/{id?}', array('uses' => 'MessagesController@show', 'as' => 'messages.show'));

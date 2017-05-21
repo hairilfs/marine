@@ -76,7 +76,6 @@ Peta Indonesia
 
 <script type="text/javascript" src="{{ asset('/content/js/d3.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/content/js/d3.geo.projection.v0.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/content/js/jquery.balloon.min.js') }}"></script>
 <!-- <script type="text/javascript" src="{{ asset('/content/js/raphael.min.js') }}"></script> -->
 <script type="text/javascript">
 

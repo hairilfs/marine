@@ -16,6 +16,13 @@ use Illuminate\View;
 
 class BaseController extends Controller {
 
+	function __construct($foo = null)
+	{
+		$this->data['data_notif'] = Status_Notification::where('id_user', Auth::user()->id_role)
+														->where('last_read_date', null)
+														->get();
+	}
+
 	protected function check_if_authorized($employee_profile_id){
 		if(!empty($employee_profile_id)){
 			if(Auth::user()->employee_profile->id == $employee_profile_id){
@@ -27,10 +34,10 @@ class BaseController extends Controller {
 
 	protected function list_notification() {
 		$data = Status_Notification::where('id_user', Auth::user()->id_role)->get();
-		return \View::make('notification.index')->with('data',$data);
+		return \View::make('notification.index')->with('data_notif',$data);
 	}
 
-	protected function new_notification(){
+	protected function add_notification(){
 		return \View::make('notification.add');
 	}
 
@@ -41,16 +48,15 @@ class BaseController extends Controller {
 		if($role_id != null){
 			$list_user = Role::where('id', '=', $role_id)->get();
 			foreach ($list_user as $user) {
-			// dd($user);
-				# code...
+			// dd(Auth::user());
 				$d = array(	'code' 		=> $req->code,
 							'id_user'	=> $user->id,
 							'message'	=> $req->message,
 							'url_action'=> $req->url_action,
 			                'created_date' 	=> date('Y-m-d H:i:s'),
-			                'created_by' 	=> 'System'
+			                // 'created_by' 	=> 'System',
+			                'created_by' 	=> Auth::user()->username,
 						);
-				// array_push($data, $d);
 				$data[] = $d;
 			}
 		} else {
@@ -66,21 +72,76 @@ class BaseController extends Controller {
 		$return = Status_Notification::insert($data);
 		
 		if ($return) {
-			return \View::make('notification.index')->with('message', 'Notification sent');
+			return redirect()->route('notification_list')->with('success_toastr', 'Success, data added!');
 		}
 
-		return redirect()->route('notification/new');
+		return redirect()->route('notification_new');
 
+	}
 
+	protected function edit_notification($id){
+		
+		$data = Status_Notification::find($id);
+		return \View::make('notification.edit')->with('data',$data);
+	}
+
+	protected function store_edit_notification(Request $req){
+		$role_id = Auth::user()->id_role;
+		// dd($req);
+		$data  = [
+			'code' 			=> $req->code,
+			'message' 		=> $req->message,
+			'url_action' 	=> $req->url_action,
+			'updated_date' 	=> date('Y-m-d H:i:s'),
+		];
+
+		if(!empty($role_id) ){
+            $retval = Status_Notification::where('id', '=', $req->id)->update($data);
+            if ($retval) {
+            	return redirect()->route('notification_list')->with('success_toastr', 'Success, data edited!');
+            } else {
+            	return redirect()->route('notification_list')->with('success_toastr', 'Failed, data not edited!');
+            }
+		} 
+		else {
+			dd('Oops, you don\'t have access!');
+		}
+	}
+
+	protected function get_notif($id=0) {
+        $data = Status_Notification::find($id);
+
+        if ($data) {
+	        $date = $this->update_status_notification($id);
+	        $isi = array(
+        		'code' => $data->code,
+        		'message' => $data->message,
+        		'url_action' => $data->url_action,
+        		'date' => $date,
+        	);
+	        echo json_encode($isi);
+        } else {
+        	$isi = array(
+        		'code' => 'Oops!',
+        		'message' => '<p>Sorry, data not found.',
+        		'url_action' => '<p>Sorry, data not found.',
+        	);
+
+        	echo json_encode($isi);
+        }
 	}
 
 	protected function update_status_notification($id){
         $data = Status_Notification::find($id);
         if(!empty($data)){
+        	$the_date = date('Y-m-d H:i:s');
 	        Status_Notification::where('id',$id)->update(
 	            array(  
-	                'last_read_date' => date('Y-m-d H:i:s')
-	            ));
+	                'last_read_date' => $the_date,
+	            )
+	        );
+
+	        return $the_date;
         }
 	}
 

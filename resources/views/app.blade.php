@@ -26,6 +26,8 @@
     <!-- Custom CSS -->
     <link href="{{ asset('/content/sb-admin/css/sb-admin-2.css') }}" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="{{ asset('/content/jquery/jquery-2.1.1.min.js') }}"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -53,15 +55,21 @@
               } 
           ?>
 
-<!--          <li>
+         {{-- <li>
             <a href="#" data-toggle="modal" data-target="#choose-theme"><i class="fa fa-picture-o fa-fw"></i> Choose Theme</a>
-          </li> -->
+          </li> --}}
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              <i class="fa fa-envelope-o fa-fw"></i> Message <span class="badge">3</span>
+              <i class="fa fa-envelope-o fa-fw"></i> Message <span class="badge">{{ count($data_notif) }}</span>
             </a>
             <ul class="dropdown-menu dropdown-user">
-                          
+              @foreach ($data_notif as $index => $element)
+                <li>
+                  <a href="javascript:void(0)" class="nav-msg" data-desc="{{ str_limit(strip_tags($element->message), 30) }}">{{ $element->code }}</a>
+                </li>
+                <?php if($index == 4) break; ?>
+              @endforeach
+
               <li class="divider"></li>
               <li>
                 <a href="{{ URL::to('notification/') }}"><i class="fa fa-envelope-o fa-fw"></i> See all messages</a>
@@ -439,6 +447,7 @@ var base_url = "{{ URL::to('/') }}";
 
 <link href="{{ asset('/content/dhtmlxTree_v45/codebase/dhtmlxtree.css') }}" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="{{ asset('/content/dhtmlxTree_v45/codebase/dhtmlxtree.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/content/js/jquery.balloon.min.js') }}"></script>
 
 <style type="text/css">
   #tree_directory {
@@ -474,6 +483,15 @@ var base_url = "{{ URL::to('/') }}";
     $(document).ready(function(){
 
       $("body").onload = load_tree();
+
+      // tooltip marker
+      $('.nav-msg').balloon({
+        html: true,
+        contents: function(){
+          return '<h5>'+$(this).data('desc')+'</h5>';
+        },
+        position: 'left',
+      });
 
     });
 
@@ -516,6 +534,10 @@ var base_url = "{{ URL::to('/') }}";
       var id = myTree.contextID;
       myTree.setItemColor(id,menuitemId.split("_")[1]);
     }
+
+    @if (session('success_toastr'))
+        toastr.success('{{ session('success_toastr') }}');
+    @endif
 
 
 </script>

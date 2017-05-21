@@ -23,6 +23,7 @@ class EmailController extends BaseController {
 
     public function __construct()
     {
+    	parent::__construct();
         $this->middleware('auth');
     }
 
@@ -32,7 +33,7 @@ class EmailController extends BaseController {
 	* @return Response
 	*/
 	public function index()	{ 
-		return View::make('email.index');
+		return View::make('email.index')->with('data_notif', $this->data['data_notif']);
 	}
 
 
