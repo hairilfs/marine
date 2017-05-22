@@ -77,7 +77,7 @@ Notification
                     <a href="{{ URL::to('notification/edit', array('id' => $item->id)) }}" class="btn btn-xs btn-success" data-tooltip="tooltip" data-placement="top" title="Edit">
                         <i class="glyphicon glyphicon-edit"></i>
                     </a>
-                    <a href="{{ URL::to('user/delete', array('id' => $item->id)) }}" onclick=" return getConfirmation();" class="btn btn-xs btn-danger" data-tooltip="tooltip" data-placement="top" title="Hapus">
+                    <a href="{{ URL::to('notification/delete', array('id' => $item->id)) }}" onclick=" return getConfirmation();" class="btn btn-xs btn-danger" data-tooltip="tooltip" data-placement="top" title="Hapus">
                         <i class="glyphicon glyphicon-trash"></i>
                     </a> 
                     @endif

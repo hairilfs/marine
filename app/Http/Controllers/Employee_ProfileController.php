@@ -101,7 +101,6 @@ class Employee_ProfileController extends BaseController {
 	* @return Response
 	*/
     public function index() { 
-
         // $data = Employee_Profile::orderBy('name')->get();        
         $data = DB::select('select * from vw_employee_profile ');      
         $list_functional_title = Functional_Title::orderBy('name')->lists('name', 'Id')->all();
@@ -111,7 +110,13 @@ class Employee_ProfileController extends BaseController {
         $list_status = $this->get_list_status();
         $list_column = $this->get_list_column_mi();
         // $list_abjad = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
-        return View::make('employee_profile.index')->with('data',$data)->with('list_functional_title', $list_functional_title)->with('list_structural_title', $list_structural_title)->with('list_harbour_master', $list_harbour_master)->with('list_emp_grade', $list_emp_grade)->with('list_column', $list_column);
+        return View::make('employee_profile.index')
+        ->with('data',$data)
+        ->with('list_functional_title', $list_functional_title)
+        ->with('list_structural_title', $list_structural_title)
+        ->with('list_harbour_master', $list_harbour_master)
+        ->with('list_emp_grade', $list_emp_grade)
+        ->with('list_column', $list_column);
     }
 
     public function filter_column() { 

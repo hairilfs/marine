@@ -27,7 +27,7 @@ Notification
 
 </div>
 
-{!! Form::open(array('url' => 'notification/edit', 'role' => 'form', 'method' => 'post', 'class' => 'form-horizontal',  'name' => 'form_thread', 'parsley-validate', 'enctype' => 'multipart/form-data')) !!}
+{!! Form::open(array('url' => 'notification/update', 'role' => 'form', 'method' => 'post', 'class' => 'form-horizontal',  'name' => 'form_thread', 'parsley-validate', 'enctype' => 'multipart/form-data')) !!}
 <input type="hidden" name="id" value="{{ $data->id }}">
 <div class="panel panel-default">
     <div class="panel-heading"><i class="glyphicon glyphicon-signal"></i> </div>    

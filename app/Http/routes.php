@@ -1,5 +1,7 @@
 <?php
 
+use App\Model\Status_Notification;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,7 +17,11 @@ Route::get('/', function () {
 	if(!Auth::check()){
 		return Redirect::to('auth/login');            
 	} else {
-		return view('app');			
+		$this->data['data_notif'] = Status_Notification::where('id_user', Auth::user()->id_role)
+														->where('last_read_date', null)
+														->get();
+		// return view('app');
+		return \View::make('app')->with('data_notif',$this->data['data_notif']);
 	}
 
 });
@@ -41,7 +47,7 @@ Route::get('doc_type/delete/{id}','Doc_TypeController@delete');
 Route::get('doc_type/detail/{id}','Doc_TypeController@detail');
 Route::post('faculty/search','Doc_TypeController@search');
 
-Route::get('faculty','FacultyController@index');
+Route::get('faculty','FacultyController@index'); 
 Route::get('faculty/add','FacultyController@add');
 Route::post('faculty/save','FacultyController@save');
 Route::get('faculty/edit/{id}','FacultyController@edit');
@@ -359,13 +365,10 @@ Route::get('notification','BaseController@list_notification')->name('notificatio
 Route::get('notification/add','BaseController@add_notification')->name('notification_new');
 Route::post('notification/store','BaseController@insert_notification');
 Route::get('notification/edit/{id?}','BaseController@edit_notification')->name('edit_notification');
-Route::post('notification/edit','BaseController@store_edit_notification')->name('store_edit_notification');
+Route::post('notification/update','BaseController@store_edit_notification')->name('store_edit_notification');
+Route::get('notification/delete/{id?}','BaseController@delete_notif');
 Route::post('notification/get/{id?}','BaseController@get_notif')->name('get_notif');
-Route::get('notification/update','BaseController@update_status_notification');
-Route::post('notification/update','BaseController@insert_notification');
-Route::get('notification/{id?}', array('uses' => 'MessagesController@show', 'as' => 'messages.show'));
-Route::put('notification/{id?}', array('uses' => 'MessagesController@update', 'as' => 'messages.update'));
-Route::get('notification/delete/{id?}','MessagesController@delete');
+Route::post('notification/nav_notif/{id?}','BaseController@nav_notif');
 
 // Route::group(['prefix' => 'messages'], function () {
 //     Route::get('/', ['as' => 'messages', 'uses' => 'MessagesController@index']);

@@ -60,15 +60,9 @@
           </li> --}}
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              <i class="fa fa-envelope-o fa-fw"></i> Message <span class="badge">{{ count($data_notif) }}</span>
+              <i class="fa fa-envelope-o fa-fw"></i> Message <span class="badge" id="count_notif"></span>
             </a>
-            <ul class="dropdown-menu dropdown-user">
-              @foreach ($data_notif as $index => $element)
-                <li>
-                  <a href="javascript:void(0)" class="nav-msg" data-desc="{{ str_limit(strip_tags($element->message), 30) }}">{{ $element->code }}</a>
-                </li>
-                <?php if($index == 4) break; ?>
-              @endforeach
+            <ul class="dropdown-menu dropdown-user" id="head_notif">
 
               <li class="divider"></li>
               <li>
@@ -484,14 +478,30 @@ var base_url = "{{ URL::to('/') }}";
 
       $("body").onload = load_tree();
 
-      // tooltip marker
-      $('.nav-msg').balloon({
-        html: true,
-        contents: function(){
-          return '<h5>'+$(this).data('desc')+'</h5>';
-        },
-        position: 'left',
-      });
+      var token = "{{ csrf_token() }}";
+      var id_user = {{ Auth::user()->id }};
+      $.post('{{ URL::to('notification/nav_notif') }}/'+id_user, { _token: token }, function(resp){
+        console.log(resp);
+        var the_dom = '';
+        $.each(resp, function(i, v){
+          var desc = $(v.message).text();
+          the_dom += '<li>';
+          the_dom +=    '<a href="javascript:void(0)" class="nav-msg" data-desc="'+desc.substr(0,30)+'...">'+v.code+'</a>';
+          the_dom += '</li>';
+        });
+
+        $('#head_notif').prepend(the_dom);
+        $('#count_notif').html(resp.length);
+
+        $('.nav-msg').balloon({
+          html: true,
+          contents: function(){
+            return '<h5>'+$(this).data('desc')+'</h5>';
+          },
+          position: 'left',
+        });
+
+      }, 'json');
 
     });
 

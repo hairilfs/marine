@@ -16,11 +16,12 @@ use Illuminate\View;
 
 class BaseController extends Controller {
 
-	function __construct($foo = null)
+	protected function nav_notif($id)
 	{
-		$this->data['data_notif'] = Status_Notification::where('id_user', Auth::user()->id_role)
+		$the_lists = Status_Notification::where('id_user', $id)
 														->where('last_read_date', null)
 														->get();
+    	echo json_encode($the_lists);
 	}
 
 	protected function check_if_authorized($employee_profile_id){
@@ -32,8 +33,11 @@ class BaseController extends Controller {
 		return false;
 	}
 
-	protected function list_notification() {
-		$data = Status_Notification::where('id_user', Auth::user()->id_role)->get();
+	protected function list_notification($id=null) {
+		if (empty($id)) {
+			$id = Auth::user()->id;
+		}
+		$data = Status_Notification::where('id_user', $id)->get();
 		return \View::make('notification.index')->with('data_notif',$data);
 	}
 
@@ -143,6 +147,20 @@ class BaseController extends Controller {
 
 	        return $the_date;
         }
+	}
+
+	protected function delete_notif($id){
+		try{
+     
+            $notif = Status_Notification::find($id);
+            if(!empty($notif)){
+	            $notif->destroy($id);
+	            return redirect()->route('notification_list')->with('success_toastr', 'Success, data deleted!');
+            }
+        } catch(QueryException $e){
+            return redirect()->route('notification_list')->with('success_toastr', 'Failed, '.$e);
+        }
+
 	}
 
 	protected function update_all_status_notification($user_id){
