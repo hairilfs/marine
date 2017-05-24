@@ -94,15 +94,17 @@ class EmailController extends BaseController {
             	$subject = Input::get('subject');
             	$body_message =  Input::get('message');
 
-	            $data_email = array(
-	            		// 'evawandamiranti15@gmail.com',
-						// 'gojek.jkte4746z@gmail.com',
-						// 'lhoryawidiasari15@gmail.com',
-						// 'nukeglam75@gmail.com',
-						// 'pajarseptianto01@gmail.com',
-						'hairilfiqri@gmail.com',
-						// 'ainiadla@gmail.com'
-	            	);
+            	$data_email = explode(',', Input::get('email'));
+
+	     //        $data_email = array(
+	     //        		// 'evawandamiranti15@gmail.com',
+						// // 'gojek.jkte4746z@gmail.com',
+						// // 'lhoryawidiasari15@gmail.com',
+						// // 'nukeglam75@gmail.com',
+						// // 'pajarseptianto01@gmail.com',
+						// 'hairilfiqri@gmail.com',
+						// // 'ainiadla@gmail.com'
+	     //        	);
 
 	            $sender_name = Auth::user()->employee_profile != null? Auth::user()->employee_profile->name: Auth::user()->username;
             	$sender_email = Auth::user()->email != null ? Auth::user()->email : (Auth::user()->employee_profile != null ? Auth::user()->employee_profile->email01 : "administrator@mail.com") ;

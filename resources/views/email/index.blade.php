@@ -32,6 +32,12 @@ Email Blast
     <div class="panel-heading"><i class="glyphicon glyphicon-signal"></i> </div>    
       <div class="panel-body">
            <div class="form-group">
+                 <label class="col-sm-2 control-label">To(s)</label>
+            <div class="col-sm-6">      
+              <input type="text" name="email" id="the_email" class="form-control input-sm" data-role="tagsinput">
+            </div>
+          </div>
+           <div class="form-group">
                  {!! Form::label('subject', 'Subject', array('class' => 'col-sm-2 control-label')) !!}  <span class="required-input">*</span>
             <div class="col-sm-6">      
             {!! Form::text('subject', '', array('id' => 'subject', 'class' => 'form-control input-sm  required',  'placeholder'  => 'Subject' )) !!}
@@ -70,8 +76,15 @@ Email Blast
 
 @endsection
 @section('javascript')
+<script src="{{ asset('/content/js/bootstrap-tagsinput.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function(){
+      $('.bootstrap-tagsinput input[type=text]').on('keyup keypress', function(e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) { 
+          e.preventDefault();
+        }
+      });
 
     });
 

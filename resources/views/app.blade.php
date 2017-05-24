@@ -25,6 +25,7 @@
     <link href="{{ asset('/content/sb-admin/metisMenu/dist/metisMenu.min.css') }}" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
     <link href="{{ asset('/content/sb-admin/css/sb-admin-2.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/content/css/bootstrap-tagsinput.css') }}" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="{{ asset('/content/jquery/jquery-2.1.1.min.js') }}"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
